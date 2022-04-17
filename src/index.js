@@ -60,8 +60,6 @@ export const getFlooroCeil = (number) => {
  * @returns {number}
  */
 export const randomizer = (from, to) => {
-    from = Math.ceil(from);
-    to = Math.floor(to);
     const randNumber = Math.random() * (to - from + 1);
     return Math.floor(randNumber) + from;
 };
